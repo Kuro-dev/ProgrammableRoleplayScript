@@ -9,7 +9,8 @@ Install via maven:
 
 # basics:
 
-The Entrypoint of your script is the `[main]` prompt Comments in a script are supported. Anything in the line following
+The Entrypoint of your script is the `[main]` prompt.
+Comments in a script are supported. Anything in the line following
 a `#` symbol is excluded from the parsing. if you do need a # in the text somewhere it can be escaped using `\#`
 
 ```
