@@ -3,18 +3,21 @@ package parsing;
 import org.junit.Test;
 import org.kurodev.KChoices;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static org.junit.Assert.assertEquals;
 
 public class ParsingTests {
 
-    private InputStream loadTestFile(String filename) {
-        return this.getClass().getResourceAsStream("/testfiles/" + filename);
+    private InputStream loadTestFile(String filename) throws IOException {
+        return Files.newInputStream(Path.of("./scripts", filename));
     }
 
     @Test
-    public void ignoreComments() {
+    public void ignoreComments() throws IOException {
         var file = loadTestFile("testScript.krp");
         KChoices game = new KChoices();
         game.start(file);
@@ -25,7 +28,7 @@ public class ParsingTests {
     }
 
     @Test
-    public void choicePicking() {
+    public void choicePicking() throws IOException {
         var file = loadTestFile("testScript.krp");
         KChoices game = new KChoices();
         game.start(file);
@@ -34,5 +37,27 @@ public class ParsingTests {
         assertEquals(1, game.getPrompt().getOptions().size());
         assertEquals(1, game.getPreviousChoices().size());
         assertEquals("option2", game.getPrompt().getOptions().get(0).getId());
+    }
+
+    @Test
+    public void fileLoadingDefaultToMain() throws IOException {
+        var file = loadTestFile("testScriptLoading.krp");
+        KChoices game = new KChoices();
+        game.start(file);
+        assertEquals("some text", game.getPrompt().getText());
+        assertEquals(2, game.getPrompt().getOptions().size());
+        game.pickChoice("loadScript");
+        assertEquals("display this", game.getPrompt().getText());
+    }
+
+    @Test
+    public void fileLoadingToCustomEntryPoint() throws IOException {
+        var file = loadTestFile("testScriptLoading.krp");
+        KChoices game = new KChoices();
+        game.start(file);
+        assertEquals("some text", game.getPrompt().getText());
+        assertEquals(2, game.getPrompt().getOptions().size());
+        game.pickChoice("loadScriptExplicit");
+        assertEquals("display that", game.getPrompt().getText());
     }
 }

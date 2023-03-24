@@ -59,6 +59,7 @@ public class KChoices {
 
     public void setPrompt(Prompt prompt) {
         this.prompt = prompt;
+        handleInstructions();
     }
 
     public void start(InputStream input) {

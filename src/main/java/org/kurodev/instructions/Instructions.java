@@ -22,17 +22,32 @@ public enum Instructions implements RoleplayInstruction {
     LOAD_FILE("load") {
         @Override
         public void execute(KChoices game, String argument, ChoiceOption option) {
-            Path scriptPath = game.getPathProvider().apply(argument);
-            if (Files.exists(scriptPath)) {
-                try {
-                    String script = Files.readString(scriptPath, StandardCharsets.UTF_8);
-                    game.setPage(new PromptLoader(script));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+            option.getCallbacks().add((gameContext, page) -> {
+                String fileName;
+                String entryPoint;
+                if (argument.contains(".")) {
+                    final int filenameIndex = 0, entryPointIndex = 1;
+                    final var split = argument.split("\\.");
+                    fileName = split[filenameIndex];
+                    entryPoint = split[entryPointIndex];
+                } else {
+                    entryPoint = "main";
+                    fileName = argument;
                 }
-            } else {
-                throw new ScriptNotFoundException(scriptPath);
-            }
+                Path scriptPath = game.getPathProvider().apply(fileName);
+                if (Files.exists(scriptPath)) {
+                    try {
+                        String script = Files.readString(scriptPath, StandardCharsets.UTF_8);
+                        var newPage = new PromptLoader(script);
+                        game.setPage(newPage);
+                        game.setPrompt(newPage.loadPrompt(entryPoint));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                } else {
+                    throw new ScriptNotFoundException(scriptPath);
+                }
+            });
         }
     },
     CONDITIONAL("if") {

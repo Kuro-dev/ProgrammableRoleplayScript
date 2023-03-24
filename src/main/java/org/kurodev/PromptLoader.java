@@ -47,7 +47,7 @@ public class PromptLoader {
         for (String line : lines) {
             if (line.startsWith("[" + id + "]")) {
                 found = true;
-                if (line.endsWith(idClosingTag)) {
+                if (line.contains(idClosingTag)) {
                     String text = line.substring(id.length() + 2, line.lastIndexOf(idClosingTag));
                     result.append(text.trim());
                     break;
