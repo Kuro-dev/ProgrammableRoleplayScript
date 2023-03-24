@@ -86,6 +86,10 @@ public class ParsingTests {
         assertEquals("display that", game.getPrompt().getText());
     }
 
+    /**
+     * [main]Hi, my name is { characterName }! what is your name?[$main]
+     * $choice1:my name is {playerName}. Pleased to meet you//
+     */
     @Test
     public void fileArgumentReplacement() throws IOException {
         var file = loadTestFile("varScript.krp");
