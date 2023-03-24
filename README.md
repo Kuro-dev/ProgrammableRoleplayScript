@@ -29,7 +29,7 @@ the text of any choice may include any of these instructions:
 - `$(to:promptID)` causes the engine to automatically load the next prompt in this script after a choice has been made.
 - `$(if:promptID.choiceID)` hides this choice if the given choice has not been made.
 - `($load:scriptName.firstPrompt)` loads the given script file (filename without extention) and automatically loads the
-  given prompt after the choice was made.
+  given prompt after the choice was made. (the given prompt can be omitted, which will cause the parser to default to loading the [main] prompt of the given file)
 
 # example script
 
