@@ -82,7 +82,7 @@ public class KChoices {
         logger.trace("Loading instructions");
         for (ChoiceOption option : prompt.getOptions()) {
             var parser = new ChoiceParser(option);
-            parser.parse(this, page);
+            parser.parse(this);
         }
     }
 
