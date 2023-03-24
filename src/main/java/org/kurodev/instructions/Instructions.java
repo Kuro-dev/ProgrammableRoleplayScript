@@ -3,20 +3,12 @@ package org.kurodev.instructions;
 import org.kurodev.KChoices;
 import org.kurodev.PromptLoader;
 import org.kurodev.choice.ChoiceOption;
-import org.kurodev.exceptions.ScriptNotFoundException;
-
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public enum Instructions implements RoleplayInstruction {
     NAVIGATE("to") {
         @Override
         public void execute(KChoices game, String argument, ChoiceOption option) {
-            option.getCallbacks().add((gameContext, loader, args) -> {
-                gameContext.setPrompt(loader.loadPrompt(argument, args));
-            });
+            option.getCallbacks().add((gameContext, loader, args) -> gameContext.setPrompt(loader.loadPrompt(argument, args)));
         }
     },
     LOAD_FILE("load") {
@@ -34,18 +26,13 @@ public enum Instructions implements RoleplayInstruction {
                     entryPoint = "main";
                     fileName = argument;
                 }
-                Path scriptPath = game.getPathProvider().apply(fileName);
-                if (Files.exists(scriptPath)) {
-                    try {
-                        String script = Files.readString(scriptPath, StandardCharsets.UTF_8);
-                        var newPage = new PromptLoader(script);
-                        game.setPage(newPage);
-                        game.setPrompt(newPage.loadPrompt(entryPoint, args));
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-                } else {
-                    throw new ScriptNotFoundException(scriptPath);
+                try {
+                    String script = game.getPathProvider().getScript(fileName);
+                    var newPage = new PromptLoader(script);
+                    game.setPage(newPage);
+                    game.setPrompt(newPage.loadPrompt(entryPoint, args));
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
                 }
             });
         }

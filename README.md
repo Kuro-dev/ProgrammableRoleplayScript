@@ -87,3 +87,4 @@ public class example {
 - clean up the code once everything is working
 - add javadoc
 - add documentation showing how to add custom instructions to the roleplay
+- add the ability to save and load

@@ -9,9 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.file.Path;
 import java.util.*;
-import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -21,7 +19,7 @@ public class KChoices {
     private final Map<String, String> args;
     private final List<String> previousChoices = new ArrayList<>();
     PromptLoader page = null;
-    private Function<String, Path> pathProvider = s -> Path.of("./scripts/" + s + ".krp");
+    private ScriptProviderFunction pathProvider = ScriptProviderFunction.defaultScriptProvider();
     private Prompt prompt = null;
 
     public KChoices() {
@@ -112,7 +110,7 @@ public class KChoices {
         start(Arrays.asList(script.split("[\n\r]")));
     }
 
-    public Function<String, Path> getPathProvider() {
+    public ScriptProviderFunction getPathProvider() {
         return pathProvider;
     }
 
@@ -122,7 +120,7 @@ public class KChoices {
      *                     $(load:filenameWithoutExtention) instruction
      *                     <p>Must not be {@code null}</p>
      */
-    public void setPathProvider(Function<String, Path> pathProvider) {
+    public void setPathProvider(ScriptProviderFunction pathProvider) {
         this.pathProvider = Objects.requireNonNull(pathProvider);
     }
 
