@@ -1,0 +1,9 @@
+# this line should be ignored
+[main]this is the start point[$main]
+ $option1: this is your option $(to:prompt)
+ $someOtherOption: im just here to distract tbh
+
+    [prompt]this should be displayed
+this is a second line for this text[$prompt]
+$option2: this is an option for the "prompt" text
+$option3: $(if:main.someOtherOption) this is conditional
