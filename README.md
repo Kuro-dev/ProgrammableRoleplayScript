@@ -26,6 +26,8 @@ the text of any choice may include any of these instructions:
 (it does not matter where in the choice-text you put the instructions)
 
 ```
+#example.krp
+
 # this line should be ignored
 [main]Youre in a forest, the path crosses off to the left and right[$main]
     $goLeft: you go left $(to:prompt)
@@ -36,6 +38,38 @@ this is a second line for this text[$prompt]
     $optionA: this is an option for the "prompt" text     
     #this comment will also be ignored
     $optionB: $(if:main.goRight) this is conditional
+```
+
+Loading the script:
+
+```java
+import org.kurodev.KChoices;
+import org.kurodev.choice.ChoiceOption;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class example {
+  public static void main(String[] args) throws Exception {
+    Path scriptFile = Path.of("./scripts/example.krp");
+    KChoices game = new KChoices();
+    game.start(Files.newInputStream(scriptFile));
+
+    //print the text
+    System.out.println(game.getPrompt().getText());
+    for (ChoiceOption option : game.getPrompt().getOptions()) {
+      System.out.println(option.getText());
+    }
+
+    //handle the input to make choices
+
+    game.pickChoice("goLeft");
+
+    //display the new prompt and options
+
+    game.pickChoice("optionA");
+  }
+}
 ```
 
 # TODOS:
