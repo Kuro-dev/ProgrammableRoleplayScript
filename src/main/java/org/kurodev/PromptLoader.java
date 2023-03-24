@@ -4,6 +4,7 @@ import org.kurodev.choice.ChoiceOption;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class PromptLoader {
     private final String script;
@@ -38,7 +39,7 @@ public class PromptLoader {
         return options;
     }
 
-    public Prompt loadPrompt(String id) {
+    public Prompt loadPrompt(String id, Map<String, String> args) {
         final String idClosingTag = "[$" + id + "]";
         String[] lines = script.split("\n");
         boolean found = false;
@@ -66,7 +67,7 @@ public class PromptLoader {
             }
         }
 
-        return new Prompt(id, result.toString(), loadChoices(id));
+        return new Prompt(id, result.toString(),args, loadChoices(id));
     }
 }
 

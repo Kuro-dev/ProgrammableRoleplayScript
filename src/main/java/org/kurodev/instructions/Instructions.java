@@ -14,15 +14,15 @@ public enum Instructions implements RoleplayInstruction {
     NAVIGATE("to") {
         @Override
         public void execute(KChoices game, String argument, ChoiceOption option) {
-            option.getCallbacks().add((gameContext, loader) -> {
-                gameContext.setPrompt(loader.loadPrompt(argument));
+            option.getCallbacks().add((gameContext, loader, args) -> {
+                gameContext.setPrompt(loader.loadPrompt(argument, args));
             });
         }
     },
     LOAD_FILE("load") {
         @Override
         public void execute(KChoices game, String argument, ChoiceOption option) {
-            option.getCallbacks().add((gameContext, page) -> {
+            option.getCallbacks().add((gameContext, page, args) -> {
                 String fileName;
                 String entryPoint;
                 if (argument.contains(".")) {
@@ -40,7 +40,7 @@ public enum Instructions implements RoleplayInstruction {
                         String script = Files.readString(scriptPath, StandardCharsets.UTF_8);
                         var newPage = new PromptLoader(script);
                         game.setPage(newPage);
-                        game.setPrompt(newPage.loadPrompt(entryPoint));
+                        game.setPrompt(newPage.loadPrompt(entryPoint, args));
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }

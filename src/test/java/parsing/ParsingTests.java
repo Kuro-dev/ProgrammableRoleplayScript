@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
@@ -59,5 +61,15 @@ public class ParsingTests {
         assertEquals(2, game.getPrompt().getOptions().size());
         game.pickChoice("loadScriptExplicit");
         assertEquals("display that", game.getPrompt().getText());
+    }
+
+    @Test
+    public void fileArgumentReplacement() throws IOException {
+        var file = loadTestFile("varScript.krp");
+        Map<String, String> arguments = new HashMap<>();
+        arguments.put("characterName", "Kuro");
+        KChoices game = new KChoices(arguments);
+        game.start(file);
+        assertEquals("Hi, my name is Kuro! what is your name?", game.getPrompt().getText());
     }
 }

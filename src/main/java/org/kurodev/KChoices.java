@@ -71,7 +71,7 @@ public class KChoices {
     private void start(List<String> lines) {
         logger.trace("Starting the game");
         page = new PromptLoader(String.join("\n", normalizeLines(lines)));
-        prompt = page.loadPrompt("main");
+        prompt = page.loadPrompt("main", args);
         if (prompt == null) {
             throw new RuntimeException("The script must contain a '[main]' prompt");
         }
@@ -95,7 +95,7 @@ public class KChoices {
             throw new IllegalArgumentException("Must be a choice that is offered by the prompt");
         previousChoices.add(prompt.getId() + "." + choiceID);
         for (ChoicePickedCallback callback : option.getCallbacks()) {
-            callback.onSelected(this, page);
+            callback.onSelected(this, page, args);
         }
         handleInstructions();
     }
