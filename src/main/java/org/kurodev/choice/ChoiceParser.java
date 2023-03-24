@@ -27,8 +27,8 @@ public class ChoiceParser {
         this.option = option;
     }
 
-    public void parse(KChoices context, PromptLoader page) {
-        var matcher = INSTRUCTION.matcher(option.getText());
+    public void parse(KChoices context) {
+        var matcher = INSTRUCTION.matcher(option.getTextRaw());
         while (matcher.find()) {
             String instruction = matcher.group(2);
             String[] instructions = instruction.split(":");

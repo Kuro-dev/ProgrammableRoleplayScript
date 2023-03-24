@@ -14,7 +14,7 @@ public class PromptLoader {
         this.script = script;
     }
 
-    public List<ChoiceOption> loadChoices(String id) {
+    public List<ChoiceOption> loadChoices(String id, Map<String, String> args) {
         String[] lines = script.split("\n");
         boolean found = false;
         List<ChoiceOption> options = new ArrayList<>();
@@ -32,7 +32,7 @@ public class PromptLoader {
                     if (slashIndex != -1) {
                         optionText = optionText.substring(0, slashIndex).trim();
                     }
-                    options.add(new ChoiceOption(optionId, optionText));
+                    options.add(new ChoiceOption(optionId, optionText, args));
                 }
             }
         }
@@ -67,7 +67,7 @@ public class PromptLoader {
             }
         }
 
-        return new Prompt(id, result.toString(),args, loadChoices(id));
+        return new Prompt(id, result.toString(), args, loadChoices(id, args));
     }
 }
 
