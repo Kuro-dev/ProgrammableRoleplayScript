@@ -1,3 +1,12 @@
+Install via maven: 
+```
+<dependency>
+<groupId>org.kurodev</groupId>
+<artifactId>kchoices</artifactId>
+<version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
 # basics:
 
 The Entrypoint of your script is the `[main]` prompt Comments in a script are supported. Anything in the line following
