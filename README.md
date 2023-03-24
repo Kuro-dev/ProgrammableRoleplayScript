@@ -23,7 +23,7 @@ the text of any choice may include any of these instructions:
 
 # example script
 
-(it does not matter where in the text you put the instructions)
+(it does not matter where in the choice-text you put the instructions)
 
 ```
 # this line should be ignored
