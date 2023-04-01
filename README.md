@@ -14,12 +14,13 @@ Comments in a script are supported. Anything in the line following
 a `#` symbol is excluded from the parsing. if you do need a # in the text somewhere it can be escaped using `\#`
 
 ```
-[promptID] some text for the roleplay
+[promptID] 
+some text for the roleplay
 can be multi line too!
+[$promptID]
   $someOption:this is an option the user can choose// 
   $someOtherOption:or they can choose to go this path
   again these can be multi-line and are terminated by ->//
-[$promptID]
 ```
 
 # how to make choices matter
