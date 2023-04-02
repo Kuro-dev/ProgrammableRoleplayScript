@@ -101,4 +101,15 @@ public class ParsingTests {
         assertEquals("Hi, my name is Kuro! what is your name?", game.getPrompt().getText());
         assertEquals("my name is Shiro. Pleased to meet you", game.getPrompt().getOptions().get(0).getText());
     }
+
+    @Test
+    public void openingAndClosingTagInSeparateLinesTest() throws IOException {
+        var file = loadTestFile("separateTags.krp");
+        KChoices game = new KChoices();
+        game.start(file);
+        assertEquals(0, game.getPrompt().getOptions().size());
+        assertEquals("""
+                some kind of text
+                with multiple lines""", game.getPrompt().getText());
+    }
 }
