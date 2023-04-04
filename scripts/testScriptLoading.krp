@@ -1,3 +1,0 @@
-[main] some text[$main]
-$loadScript: $(load:testScriptToLoad) text//
-$loadScriptExplicit: $(load:testScriptToLoad.entry) text//
