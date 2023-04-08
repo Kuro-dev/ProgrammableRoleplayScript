@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public class ScriptPreprocessor {
     private static final Pattern COMMENT = Pattern.compile("((\\/\\*\\/).*$)");
     private static final Pattern VARIABLE = Pattern.compile("\\{var:(.+)}");
+    private static final String NEW_LINE = "\n";
 
     /**
      * Strips comments and trims lines
@@ -18,20 +19,20 @@ public class ScriptPreprocessor {
         return processVariables(normaliseScript(script), variables);
     }
 
-    private static String normaliseScript(String script) {
-        var split = script.split("\n");
-        List<String> lines = new ArrayList<>(split.length);
-        lines.addAll(Arrays.asList(split));
-        for (int i = 0; i < lines.size(); i++) {
-            var line = lines.get(i);
-            var matcher = COMMENT.matcher(line);
-            while (matcher.find()) {
-                var grp = matcher.group();
-                line = line.replace(grp, "");
+    protected static String normaliseScript(String script) {
+        var lines = script.split(NEW_LINE);
+        var normalisedLines = new ArrayList<String>();
+
+        for (var line : lines) {
+            var normalisedLine = line.replaceAll(COMMENT.pattern(), "").trim();
+
+            // line.isBlank() ensures original empty lines are respected
+            if (!normalisedLine.isBlank() || line.isBlank()) {
+                normalisedLines.add(normalisedLine);
             }
-            lines.set(i, line.trim());
         }
-        return String.join("\n", lines);
+
+        return  String.join(NEW_LINE, normalisedLines);
     }
 
     private static String processVariables(String script, Map<String, String> variables) {
