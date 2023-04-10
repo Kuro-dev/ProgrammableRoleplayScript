@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class ScriptPreprocessor {
     private static final Pattern COMMENT = Pattern.compile("((\\/\\*\\/).*$)");
-    private static final Pattern VARIABLE = Pattern.compile("\\{var:(.+)}");
+    private static final Pattern VARIABLE = Pattern.compile("\\{var:([\\w_]+)}");
     private static final String NEW_LINE = "\n";
 
     /**
