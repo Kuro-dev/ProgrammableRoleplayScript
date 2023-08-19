@@ -1,10 +1,13 @@
 package org.kurodev;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Objects;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ScriptPreprocessor {
-    private static final Pattern COMMENT = Pattern.compile("((\\/\\*\\/).*$)");
+    private static final Pattern COMMENT = Pattern.compile("(\\/\\*\\/.*$)");
     private static final Pattern VARIABLE = Pattern.compile("\\{var:([\\w_]+)}");
     private static final String NEW_LINE = "\n";
 
@@ -32,7 +35,7 @@ public class ScriptPreprocessor {
             }
         }
 
-        return  String.join(NEW_LINE, normalisedLines);
+        return String.join(NEW_LINE, normalisedLines);
     }
 
     private static String processVariables(String script, Map<String, String> variables) {
