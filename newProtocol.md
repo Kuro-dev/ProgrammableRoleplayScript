@@ -53,7 +53,7 @@ or curly braces, e.g. a dollar sign (`${injectable}` ) which should be much more
 
 ### 2.3.1 Predefined injectables
 ```
-1. Promot definition:               {prompt:name}
+1. Prompt definition:               {prompt:name}
 1. Load a prompt:                   {goto:nameOfPrompt}
 2. Load a file:                     {load:nameOfFileWithoutExtension.nameOfPrompt}
 3. Denote a choice                  {choice:name}

@@ -1,0 +1,13 @@
+{prompt:main}
+You are sitting at the beach, resting, after a long journey from {var:startingLocation}. Suddenly you spot a bottle floating in the sea. You think to
+yourself that it might have a message inside. Maybe a treasure map. You let out a laugh and mutter to yourself "As if...".
+
+What do you do?
+{choice:mcPickedBottle, goto:pickedUpBottle} Check out the bottle, maybe there is something inside after all... {goto:checkOutBottle}
+{choice:mcIgnoredBottle, goto:leftBottle} Ignore the bottle
+
+{prompt:pickedUpBottle, test:someVal, test2:someOtherVal}
+You picked up the bottle.
+
+{prompt:leftBottle}
+You left the bottle there.

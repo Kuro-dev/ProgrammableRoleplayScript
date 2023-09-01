@@ -1,0 +1,244 @@
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {prompt:main}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {var:startingLocation}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {choice:mcPickedBottle, goto:pickedUpBottle}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {goto:checkOutBottle}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {choice:mcIgnoredBottle, goto:leftBottle}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {prompt:pickedUpBottle}
+2023-08-19 21:29:59 INFO  RoleplayScriptParser:81 - group count: 5,Match: {prompt:leftBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {prompt:main}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	main
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {var:startingLocation}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	startingLocation
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {choice:mcPickedBottle, goto:pickedUpBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	mcPickedBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {goto:checkOutBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	checkOutBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {choice:mcIgnoredBottle, goto:leftBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	mcIgnoredBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {prompt:pickedUpBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:82 - group count: 6,Match: {prompt:leftBottle}
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:36:59 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{prompt:main}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	main
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{var:startingLocation}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	startingLocation
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{choice:mcPickedBottle, goto:pickedUpBottle}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	mcPickedBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{goto:checkOutBottle}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	checkOutBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{choice:mcIgnoredBottle, goto:leftBottle}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	mcIgnoredBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{prompt:pickedUpBottle}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:82 - group count: 6
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	{prompt:leftBottle}
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:05 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{prompt:main}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	prompt
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	main
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{var:startingLocation}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	var
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	startingLocation
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{choice:mcPickedBottle, goto:pickedUpBottle}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	choice
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	mcPickedBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{goto:checkOutBottle}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	checkOutBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{choice:mcIgnoredBottle, goto:leftBottle}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	choice
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	mcIgnoredBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{prompt:pickedUpBottle}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	prompt
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	{prompt:leftBottle}
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	prompt
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:39:56 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{prompt:main}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	prompt
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	main
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{var:startingLocation}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	var
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	startingLocation
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{choice:mcPickedBottle, goto:pickedUpBottle}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	choice
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	mcPickedBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{goto:checkOutBottle}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	checkOutBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{choice:mcIgnoredBottle, goto:leftBottle}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	choice
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	mcIgnoredBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	,
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	goto
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	leftBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:82 - group count: 7
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	{prompt:pickedUpBottle}
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	prompt
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	pickedUpBottle
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:40:39 INFO  RoleplayScriptParser:84 - 	null
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {prompt:main}
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {var:startingLocation}
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {choice:mcPickedBottle
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {goto:checkOutBottle}
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {choice:mcIgnoredBottle
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {prompt:pickedUpBottle
+2023-08-19 21:49:02 INFO  RoleplayScriptParser:81 - Number of instructions: {prompt:leftBottle}
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 1
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 1
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 2
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 1
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 2
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 3
+2023-08-19 21:49:09 INFO  RoleplayScriptParser:81 - Number of instructions: 1
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 1,([{prompt:main}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 1,([{var:startingLocation}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 2,([{choice:mcPickedBottle,  goto:pickedUpBottle}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 1,([{goto:checkOutBottle}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 2,([{choice:mcIgnoredBottle,  goto:leftBottle}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 3,([{prompt:pickedUpBottle,  test:someVal,  test2:someOtherVal}])
+2023-08-19 21:49:36 INFO  RoleplayScriptParser:81 - Number of instructions: 1,([{prompt:leftBottle}])
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{prompt:main}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{var:startingLocation}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[{choice:mcPickedBottle,  goto:pickedUpBottle}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{goto:checkOutBottle}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[{choice:mcIgnoredBottle,  goto:leftBottle}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 3,[{prompt:pickedUpBottle,  test:someVal,  test2:someOtherVal}]
+2023-08-19 21:49:47 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{prompt:leftBottle}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{prompt:main}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{var:startingLocation}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[{choice:mcPickedBottle,  goto:pickedUpBottle}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{goto:checkOutBottle}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[{choice:mcIgnoredBottle,  goto:leftBottle}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 3,[{prompt:pickedUpBottle,  test:someVal,  test2:someOtherVal}]
+2023-08-19 21:50:02 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[{prompt:leftBottle}]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[prompt:main]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[var:startingLocation]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[choice:mcPickedBottle,  goto:pickedUpBottle]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[goto:checkOutBottle]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 2,[choice:mcIgnoredBottle,  goto:leftBottle]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 3,[prompt:pickedUpBottle,  test:someVal,  test2:someOtherVal]
+2023-08-19 21:50:05 INFO  RoleplayScriptParser:81 - Number of instructions: 1,[prompt:leftBottle]

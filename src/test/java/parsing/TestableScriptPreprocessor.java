@@ -1,6 +1,6 @@
 package parsing;
 
-import org.kurodev.ScriptPreprocessor;
+import org.kurodev.parsing.ScriptPreprocessor;
 
 /**
 Exposes the ScriptPreprocessor internal methods for unit testing.

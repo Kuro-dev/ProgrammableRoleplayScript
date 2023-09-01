@@ -1,10 +1,12 @@
 package org.kurodev.instructions;
 
-import java.util.List;
+import org.kurodev.parsing.ParserContext;
 
+/**
+ * Primary interface to denote any Instruction or Injectable.
+ */
 public interface Instruction {
-    String getText();
+    void apply(ParserContext context, String[] args, String raw);
 
-    List<ScriptCallbackFunction> onLoad();
-    List<ScriptCallbackFunction> onUnload();
+    String getName();
 }

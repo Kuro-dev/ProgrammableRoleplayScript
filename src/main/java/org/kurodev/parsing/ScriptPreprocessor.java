@@ -1,9 +1,8 @@
-package org.kurodev;
+package org.kurodev.parsing;
 
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Objects;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ScriptPreprocessor {
@@ -23,7 +22,7 @@ public class ScriptPreprocessor {
     }
 
     protected static String normaliseScript(String script) {
-        var lines = script.split(NEW_LINE);
+        var lines = script.lines().toList();
         var normalisedLines = new ArrayList<String>();
 
         for (var line : lines) {

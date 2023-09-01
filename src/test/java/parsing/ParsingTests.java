@@ -2,7 +2,8 @@ package parsing;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.kurodev.ScriptPreprocessor;
+import org.kurodev.parsing.RoleplayScriptParser;
+import org.kurodev.parsing.ScriptPreprocessor;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,5 +38,15 @@ public class ParsingTests {
         map.put("charName", "Kuro");
         String result = ScriptPreprocessor.run(input, map);
         Assert.assertEquals(expected, result);
+    }
+
+    /**
+     * This tests the preprocessing of a scripts variables as well as stripping the script of any comments.
+     */
+    @Test
+    public void testScriptParser() {
+        RoleplayScriptParser parser = new RoleplayScriptParser(Path.of("./scripts/example1.kcs"));
+        parser.getVariables().put("startingLocation", "Varathia");
+        parser.parse();
     }
 }
